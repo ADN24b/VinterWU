@@ -1,0 +1,19 @@
+#container
+ display:grid;
+    background-color:;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15% 4frfr 5fr 10%;
+    grid-template-areas:
+    'hd hd hd hd hd'
+    'tp tp tp tp tp'
+    'mn mn mn mn mn'
+    'ft ft ft ft ft';
+
+
+
+
+#header 
+grid-area:hd 
+
+#tp
