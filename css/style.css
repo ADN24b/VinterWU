@@ -1,19 +1,42 @@
-#container
- display:grid;
-    background-color:;
+#container1{
+    display:grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 15% 4frfr 5fr 10%;
+    grid-template-rows: 15% 4fr 5fr 10%;
     grid-template-areas:
     'hd hd hd hd hd'
     'tp tp tp tp tp'
     'mn mn mn mn mn'
     'ft ft ft ft ft';
+}
 
 
 
+#header1{
+    display: grid;
+    grid-area:hd;
+    background-color: #E74C3C; 
+    height:100%;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+    'lg h2 nv';
+}
+#nav1{
+grid-area:nv;
+}
+#logo{
+    grid-area:lg;
+}
+#subheader{
+    grid-area:h2;
+}
+#placeholder{
+grid-area:tp;
+}
+#main1{
+grid-area:mn;
+}
+#footer1{
+grid-area:ft;
 
-#header 
-grid-area:hd 
-
-#tp
+}
