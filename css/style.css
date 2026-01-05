@@ -2,12 +2,14 @@
     display:grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 15% 4fr 5fr 10%;
+    grid-template-rows: 10% 3fr 4fr 10%;
     grid-template-areas:
     'hd hd hd hd hd'
     'tp tp tp tp tp'
     'mn mn mn mn mn'
     'ft ft ft ft ft';
+    background-image: url("../img/bakgrundhomepageWU.jpeg");
+        background-size: cover;
 }
 
 
@@ -22,7 +24,7 @@
     'lg h2 nv';
 }
 #nav1{
-grid-area:nv;
+    grid-area:nv;
 }
 #logo{
     grid-area:lg;
@@ -31,26 +33,31 @@ grid-area:nv;
     grid-area:h2;
 }
 #placeholder{
-grid-area:tp;
+    grid-area:tp;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 #main1{
-display:flex;
-justify-content: space-between;
-grid-area:mn;
-gap:20px;
+    grid-area:mn;
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
 }
 #footer1{
-grid-area:ft;
+    grid-area:ft;
 
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 20px;
- 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    background-color: #191919;
 }
 
 .containerCard{
-padding: 0 0 2px 8px;
+    padding: 0 0 2px 8px;
+    
 }
 img{
     border-radius: 20px 20px 0 0;
