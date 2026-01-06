@@ -5,15 +5,17 @@
     grid-template-rows: 10% 3fr 4fr 10%;
     grid-template-areas:
     'hd hd hd hd hd'
-    'tp tp tp tp tp'
-    'mn mn mn mn mn'
+    'bg bg bg bg bg'
+    'bg bg bg bg bg'
     'ft ft ft ft ft';
-    background-image: url("../img/bakgrundhomepageWU.jpeg");
-        background-size: cover;
+    
+    
 }
 
 
-
+body{
+    margin: 0;
+}
 #header1{
     display: grid;
     grid-area:hd;
@@ -57,9 +59,20 @@
 
 .containerCard{
     padding: 0 0 2px 8px;
-    
+white-space: pre-line;
 }
 img{
     border-radius: 20px 20px 0 0;
     max-height: 300px;
+}
+#background{
+    display:grid;
+    grid-area:bg;
+    background-image: url("../img/bakgrundhomepageWU.jpeg");
+        background-size: cover;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 3fr;
+    grid-template-areas: 
+    "tp tp tp tp tp"
+    "mn mn mn mn mn";
 }
