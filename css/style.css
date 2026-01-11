@@ -1,25 +1,24 @@
-#container1{
+/*INDEX OCH GLOBAL*/
+.container1{
     display:grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 10% 3fr 4fr 10%;
     grid-template-areas:
     'hd hd hd hd hd'
-    'bg bg bg bg bg'
-    'bg bg bg bg bg'
+    'ct ct ct ct ct'
+    'ct ct ct ct ct'
     'ft ft ft ft ft';
     
-    
+
 }
-
-
 body{
     margin: 0;
 }
 #header1{
     display: grid;
     grid-area:hd;
-    background-color: #E74C3C; 
+    background-color: #2C3E50; 
     height:100%;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
@@ -27,6 +26,11 @@ body{
 }
 #nav1{
     grid-area:nv;
+    font-family: ;
+    display:flexbox;
+    justify-content: center;
+    align-content: center;
+    font-size: larger;
 }
 #logo{
     grid-area:lg;
@@ -49,6 +53,9 @@ body{
 }
 #footer1{
     grid-area:ft;
+    column-count:4;
+    column-gap: 0px;
+    color:#a3a3a3;
 
 }
 .card {
@@ -68,11 +75,11 @@ img{
     max-height: 300px;
     
 }
-#background{
+.content{
     display:grid;
-    grid-area:bg;
+    grid-area:ct;
     background-image: url("../img/bakgrundhomepageWU.jpeg");
-        background-size: cover;
+    background-size: cover;
      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 3fr 3fr;
     grid-template-areas: 
@@ -83,4 +90,37 @@ img{
 .cardtext{
     color: #ffffff;
 
+}
+.maintext{
+    font-size: 150%; 
+    text-align: center; 
+    color:#191919; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.textHEADER {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  color:#ffffff;
+  text-decoration:none;
+}
+  
+a:hover{
+    color:#E74C3C;
+}
+
+
+/*HEALTH*/
+.container2{
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% 3fr 4fr 10%;
+    grid-template-areas:
+    'hd hd hd hd hd'
+    'ct ct ct ct ct'
+    'ct ct ct ct ct'
+    'ft ft ft ft ft';
 }
